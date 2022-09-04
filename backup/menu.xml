@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <VideoView
+            android:id="@+id/videoku"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/kedirilagi"></VideoView>
+        <LinearLayout
+            android:background="@drawable/bgcoba"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btAlam"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="75dp"
+                    android:background="@drawable/alam1"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </Button>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btSejarah"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/museum"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/tulisanalam"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </ImageView>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tulissejarah"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btReligi"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="75dp"
+                    android:background="@drawable/religi"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp"></Button>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btKuliner"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/kuliner"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/tulisreligi"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </ImageView>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tuliskuliner"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btPasar"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="75dp"
+                    android:background="@drawable/mall"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp"></Button>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btCafe"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/cafe"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/tulispasar"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </ImageView>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tuliscafe"
+                    android:gravity="center|bottom"
+                    android:textSize="18sp">
+                </ImageView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

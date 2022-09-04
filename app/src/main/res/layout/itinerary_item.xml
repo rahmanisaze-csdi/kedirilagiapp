@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/objectImage"
+            tools:src="@tools:sample/avatars"
+            android:scaleType="centerCrop"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/objectTitle"
+            android:text="Title"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam Buka"
+            android:id="@+id/objectOpen"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarak"
+            android:id="@+id/objectJarak"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectOpen"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:id="@+id/objectDuration"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectJarak"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menit"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/objectJarak"
+            android:layout_toRightOf="@+id/objectDuration"
+            android:layout_toEndOf="@+id/objectDuration"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"/>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu"
+            android:id="@+id/objectWaktu"
+            android:textSize="10sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@+id/objectJarak"
+            android:layout_toEndOf="@+id/objectJarak"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/objectOpen"/>-->
+        
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_turned_in_not_black_24dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/itinerary_item"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

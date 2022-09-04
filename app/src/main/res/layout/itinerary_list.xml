@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/number"
+            android:textStyle="bold"
+            android:background="@drawable/white_circle_drawable"/>
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/check"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:background="@drawable/ic_check_circle_black_24dp"/>-->
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:id="@+id/line"
+            android:background="#446F78"
+            android:layout_below="@+id/number"
+            android:layout_marginLeft="11dp"/>
+            <!--android:background="@color/tab_indicator_gray"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/durasi"
+            android:text=""
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menit"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/line"
+            android:layout_toRightOf="@+id/durasi"
+            android:layout_toEndOf="@+id/durasi"
+            android:layout_marginLeft="5dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/objectImage"
+            tools:src="@tools:sample/avatars"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/line"
+            android:layout_toEndOf="@+id/line"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text=""
+            android:id="@+id/times"
+            android:visibility="gone"
+            android:textColor="#22821f"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/objectImage"
+            android:gravity="end"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            tools:ignore="UnknownId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/objectTitle"
+            android:text="Title"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/times"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/check"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:background="@drawable/ic_check_circle_black_24dp"/>
+
+        <!--android:textColor="#1991D0"-->
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:id="@+id/time"
+            android:background="@drawable/ic_access_time_black_24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam Buka"
+            android:id="@+id/objectOpen"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/time"
+            android:layout_toEndOf="@+id/time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jarak"
+            android:id="@+id/objectJarak"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectOpen"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:id="@+id/car"
+            android:background="@drawable/ic_directions_car_black_24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectJarak"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/estimasi"
+            android:text="(60km/jam)"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/car"
+            android:layout_toEndOf="@+id/car"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectJarak"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu"
+            android:id="@+id/waktuMobil"
+            android:textSize="10sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/estimasi"
+            android:layout_toEndOf="@+id/estimasi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/objectJarak"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:id="@+id/motor"
+            android:background="@drawable/ic_motorcycle_black_24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/car"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/estimasiMotor"
+            android:text="(40km/jam)"
+            android:textSize="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/motor"
+            android:layout_toEndOf="@+id/motor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/estimasi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu"
+            android:id="@+id/waktuMotor"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/estimasiMotor"
+            android:layout_toEndOf="@+id/estimasiMotor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/waktuMobil"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Button Direction for better result"
+            android:id="@+id/alert"
+            android:textSize="10sp"
+            android:textColor="#FD0000"
+            android:layout_toRightOf="@+id/objectImage"
+            android:layout_toEndOf="@+id/objectImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/motor"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="#FFF"
+            android:background="@drawable/myripple1"
+            android:drawableStart="@drawable/ic_directions_black_24dp"
+            android:id="@+id/btDirection"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

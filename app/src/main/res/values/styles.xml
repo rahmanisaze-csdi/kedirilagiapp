@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#29393E</item>
+        <item name="colorPrimary">#29393E</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="color">#29393E</item>
+
+        <!-- enable window content transition -->
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#0b3028</item>
+    </style>
+
+
+    <style name="AppTheme.TransparentTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+    </style>
+
+</resources>

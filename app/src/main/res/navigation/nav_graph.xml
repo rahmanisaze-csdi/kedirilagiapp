@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.kedirilagi.HomeFragment"
+        android:label="Kediri Lagi"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_HomeFragment_to_alamFragment"
+            app:destination="@id/alamFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/action_HomeFragment_to_sejarahFragment2"
+            app:destination="@id/sejarahFragment2"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"/>
+        <action
+            android:id="@+id/action_HomeFragment_to_pasarFragment"
+            app:destination="@id/pasarFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/action_HomeFragment_to_cafeFragment"
+            app:destination="@id/cafeFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/action_HomeFragment_to_kulinerFragment"
+            app:destination="@id/kulinerFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+        <action
+            android:id="@+id/action_HomeFragment_to_religiFragment"
+            app:destination="@id/religiFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/itineraryFragment"
+        android:name="com.example.kedirilagi.ItineraryFragment"
+        android:label="Itinerary"
+        tools:layout="@layout/fragment_itinerary" />
+    <fragment
+        android:id="@+id/UserFragment"
+        android:name="com.example.kedirilagi.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/alamFragment"
+        android:name="com.example.kedirilagi.AlamFragment"
+        android:label="Alam/Buatan"
+        tools:layout="@layout/fragment_alam" />
+    <fragment
+        android:id="@+id/sejarahFragment2"
+        android:name="com.example.kedirilagi.SejarahFragment"
+        android:label="Sejarah"
+        tools:layout="@layout/fragment_sejarah" />
+    <fragment
+        android:id="@+id/cafeFragment"
+        android:name="com.example.kedirilagi.CafeFragment"
+        android:label="Cafe"
+        tools:layout="@layout/fragment_cafe" />
+    <fragment
+        android:id="@+id/kulinerFragment"
+        android:name="com.example.kedirilagi.KulinerFragment"
+        android:label="Kuliner"
+        tools:layout="@layout/fragment_kuliner" />
+    <fragment
+        android:id="@+id/pasarFragment"
+        android:name="com.example.kedirilagi.PasarFragment"
+        android:label="Pasar/Mall"
+        tools:layout="@layout/fragment_pasar" />
+    <fragment
+        android:id="@+id/religiFragment"
+        android:name="com.example.kedirilagi.ReligiFragment"
+        android:label="Religi"
+        tools:layout="@layout/fragment_religi" />
+</navigation>

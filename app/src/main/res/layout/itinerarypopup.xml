@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="370dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/suggestedRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/suggestedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Kategori"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/suggested_recyclerview"
+                    android:layout_below="@+id/suggestedTitle"
+                    android:layout_marginTop="10dp"/>
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/suggestedRLI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Alam/Buatan"
+                    android:id="@+id/objectTitle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp" />
+                
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/progress_bar"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/objectTitle"
+                    android:indeterminateTint="@color/colorPrimaryDark"
+                    android:layout_marginLeft="20dp"
+                    tools:ignore="RtlCompat" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_below="@+id/objectTitle"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btOke"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/myripple1"
+        android:text="Oke"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
